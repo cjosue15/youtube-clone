@@ -1,3 +1,9 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -20,6 +26,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
+  background-color: var(--bg-navbar);
 
   &__start {
     display: inherit;
@@ -39,6 +46,10 @@ button {
     display: flex;
     flex: 1;
     max-width: 660px;
+
+    &-microphone {
+      margin-left: 10px;
+    }
 
     &-input {
       display: inherit;

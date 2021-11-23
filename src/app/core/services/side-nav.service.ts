@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class SideNavService {
-  private show: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private show: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
 
   get visibilityOfMenu$() {
     return this.show.asObservable();
